@@ -1,0 +1,58 @@
+
+char stringDate[] = "%s%s%s",contacts[i].DOB.yearse
+contact temp 
+temp = contacts[i].DOB.years
+
+
+DOB years Monts
+
+
+STr
+void sortByMonths(int counterMonths)
+{
+    contact temporaryContact;
+
+    int j,i;
+
+    for (i=counterMonths; i<countLoad-1; i++)
+    {
+        for (j=i+1; j<countLoad; j++)
+        {
+            if (strcasecmp(contacts[i].DOB.months, contacts[j].DOB.months) > 0)                 //We use strcasecmp()
+            {
+                temporaryContact = contacts[i];
+                contacts[i] = contacts[j];
+                contacts[j] = temporaryContact;
+
+            }
+
+        }
+    }
+}
+
+void sortByDate()
+{
+    DOBStruct temp;
+
+  int j,i,z;
+  for (z=0;z<countLoad;z++)
+  {
+      strcpy(temp.days,contacts[z].DOB.year;
+      strcpy(contacts[z].DOB.year,contacts[z].DOB.days);
+      strcpy(contacts[z].DOB.days,temp.days);
+  }
+
+    for (i=0; i<countLoad-1; i++)
+    {
+        for (j=i+1; j<countLoad; j++)
+        {
+            if (strcasecmp(contacts[i].DOB> contacts[j].DOB)                 //We use strcasecmp()
+            {
+                temporaryContact = contacts[i];
+                contacts[i] = contacts[j];
+                contacts[j] = temporaryContact;
+            }
+        }
+    }
+}
+
